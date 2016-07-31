@@ -1,22 +1,11 @@
-/*
-* {
-	border: .5px solid red;
-}
-*/
 
 img {
-	text-align: center;
-	display: inline-block;
-	margin-left: 100px;
-	margin-right: 0 auto;
-	max-width: 400px;
+	margin-left: 70px;
+	margin-right: 0px auto;
 	padding: 20px;
-}
-
-#jimi {
-	float: left;
-	display: inline;
-	top-margin: 100px;
+	display: inline-block;
+	height: 300px;
+	width: auto;
 }
 
 a:visited {
@@ -29,7 +18,7 @@ p {
 	text-align: center;
 	margin-left: 100px;
 	font-family: courier;
-	padding: 30px;
+	padding: 100px;
 }
 
 table {
@@ -38,6 +27,8 @@ table {
 	margin-right: 0 auto;
 	background-image: url(url.jpg);
 	padding: 10px;
+	margin-bottom: 100px;
+	margin-top: 100px;
 }
 
 h1 {
@@ -45,20 +36,20 @@ h1 {
 	color: goldenrod;
 	border-top: 10px solid gold;
 	border-bottom: 10px solid gold;
-	border-left: 10px solid gold;
+	
 }
 
 h3 {
 	margin-left: 200px;
-	top-border: 10px solid gold;
-	left-border: 10px solid gold;
-	top-border: 10px solid gold;
+	border-top: 8px solid gold;
+	border-bottom: 8px solid gold;
+	
 }
 h5{
 	margin-left: 460px;
-	bottom-border: 10px solid gold;
-	top-border: 10px solid gold;
-	left-border: 10px solid gold;
+	border-top: 5px solid gold;
+	border-bottom: 5px solid gold;
+	
 }
 
 #link a {
@@ -66,6 +57,15 @@ h5{
 	border: 1px dashed black;
 	padding: 10px;
 	margin-left: 100px;
+}
+
+#jimi{
+	float: right;
+	height: 300px;
+}
+
+#kurt {
+	float:right;
 }
 
 div footer {
