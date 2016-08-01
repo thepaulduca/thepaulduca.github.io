@@ -1,8 +1,9 @@
 
-.img {
+img {
 	margin-left: 10px;
 	margin-right: 0px auto;
 	padding: 10px;
+	display: inline-block;
 	height: 300px;
 	width: auto;
 }
@@ -71,8 +72,8 @@ h5{
 }
 
 #pete {
-	display: block;
-	padding:100px;
+	display: inline-block;
+	float: right;
 }
 
 div footer {
@@ -82,11 +83,6 @@ div footer {
 * {
 	background-image: url(tan.jpg);
 	z-index: -3;
-	width: 700px;
-}
-
-body {
-	width: 70%;
 }
 
 ol {
