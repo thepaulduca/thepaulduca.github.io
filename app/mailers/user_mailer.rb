@@ -2,10 +2,10 @@ class UserMailer < ApplicationMailer
   default from: 'paul.r.duca@gmail.com'
 
   def contact_email(user_email)
-    subject 'Message via Gmail'
-    recipents 'paul.r.duca@gmail'
-    from user_email
+    subject = 'Message via Gmail'
+    from = 'paul.r.duca@gmail'
     sent_on Time.now
+    mail(subject: subject, from: from)
   end
 
   # def contact_email(email)
