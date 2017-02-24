@@ -2,8 +2,8 @@
   <div class="section no-pad-bot">
     <div class="container">
       <br><br>
-      <h1 class="header left blue-text darken-4">Paul R. Duca</h1>
-      <div class="row left">
+      <h1 class="header center blue-text darken-4">Paul R. Duca</h1>
+      <div class="row center">
         <h5 class="header col s12 light">Full-Stack Software Engineer with a diverse background</h5>
       </div>
       <br><br>
@@ -19,7 +19,7 @@
     <!--   Icon Section   -->
       <div class="col m12 m4">
         <div class="icon-block">
-          <h1 class="left blue-text"><i class="material-icons">flash_on</i></h1>
+          <h1 class="left blue-text"><i class="material-icons">spellcheck</i></h1>
           <h5 class="left">Learning</h5>
           <br>
           <br>
@@ -31,23 +31,25 @@
 
       <div class="col m12 m4">
         <div class="icon-block">
-          <h1 class="left blue-text m4"><i class="material-icons">group</i></h1>
+          <h1 class="left blue-text m4"><i class="material-icons">perm_identity</i></h1>
           <h5 class="left">Background</h5>
           <br>
           <br>
           <p class="light">During high school I dedicated the majority of my free time interacting with and participating in the arts. As a guitar player, I was able to teach kids how to play, a truly rewarding experience.
-            As an actor, I participated in many productions including the anti-bullying play <i>Bang Bang, Your Dead</i> which was performed at multiple schools. As a photographer, I have traveled the world and taken pictures of several of the natural wonders <small>(all pictures on this website are my own)</small>.
+            As an actor, I participated in many productions including the anti-bullying play <i>Bang Bang, Your Dead</i> which was performed at multiple schools. As a photographer, I have traveled the world and taken pictures of several of the natural wonders <small>(all pictures seen are my own)</small>.
             During college I studied Psychology where I learned to understand people and how they interact, a skill that I carry with me into the work place. I also developed leadership skills as the Brotherhood chair of the Kappa Delta Rho fraternity, where I learned to organize people in an effective meaningful way.</p>
         </div>
       </div>
 
       <div class="col m12 m4">
         <div class="icon-block">
-          <h1 class="left blue-text"><i class="material-icons">settings</i></h1>
+          <h1 class="left blue-text"><i class="material-icons">language</i></h1>
           <h5 class="left">Aspirations</h5>
           <br>
           <br>
-          <p class="light"> I am actively looking for my first position as a developer. I hope to find a company which values my interpersonal skills, hard work, and dedication, while cultivating my skills as a programmer. As a programmer I aspire to continue to stay in touch with the constantly evolving technology, and develop my ability to impliment clean and aconcise code. Long term I hope to contribute to innovative and meaningful software which improves peoples lives in a measurable way. Some personal goals I have is to read at least 2 books a month, stay in shape, and to learn to play the violin. </p>
+          <p class="light"> I am actively looking for my first position as a developer. I hope to find a company which values my interpersonal skills, hard work, and dedication, while cultivating my skills as a programmer.
+             As a programmer I aspire to continue to stay in touch with the constantly evolving technology, and continue to develop my ability to impliment clean and concise code.
+             Long term I hope to contribute to innovative and meaningful software which improves peoples lives in a measurable way. Some personal goals I have is to read at least 2 books a month, stay in shape, and to learn to play the violin.</p>
         </div>
 
 
@@ -61,7 +63,7 @@
   <div class="section no-pad-bot">
     <div class="container">
       <div class="row center">
-        <h3 class="header col s12 light"><strong>"Innovation distinguishes between a leader and a follower."</strong> -Steve Jobs</h3>
+        <h3 class="header col s12 light">"<strong>Innovation distinguishes between a leader and a follower.</strong>" -Steve Jobs</h3>
       </div>
     </div>
   </div>
@@ -74,8 +76,17 @@
     <div class="row">
       <div class="col s12 center">
         <h3><i class="mdi-content-send brown-text"></i></h3>
-        <h4>Contact Us</h4>
-        <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        <h5>Contact</h5>
+        <div class="icon-block">
+          <h5 class="left blue-text icon"><i class="material-icons">email</i></h5>
+          <h6 class="left">paul.r.duca@gmail.com</h6>
+            <br>
+            <br>
+            <br>
+            <br>
+          <h5 class="left blue-text icon"><i class="material-icons">call</i></h5>
+          <h6 class="left">732.284.6991</h6>
+        </div>
       </div>
     </div>
 
@@ -83,7 +94,11 @@
 </div>
 <div class="container">
   <div class="section">
-    <p> stuff </p>
+    <%= form_tag("/email", method: "post") do %>
+      <%= label_tag(:email, "Your Email") %>
+      <%= text_field_tag(:email) %>
+      <%= submit_tag("Send Email") %>
+    <% end %>
   </div>
   </div>
 
@@ -125,11 +140,6 @@
           <li><a class="white-text" href="#!">Link 4</a></li>
         </ul>
       </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-    Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
     </div>
   </div>
 </footer>

@@ -58,3 +58,7 @@ footer.page-footer {
 .parallax {
   height: 300px;
 }
+
+.icon{
+  display: block;;
+}
