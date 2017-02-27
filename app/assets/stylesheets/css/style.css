@@ -62,3 +62,7 @@ footer.page-footer {
 .icon{
   display: block;;
 }
+
+.material-icons {
+  padding: 10px;
+}
