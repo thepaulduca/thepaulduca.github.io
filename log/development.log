@@ -3314,3 +3314,10 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-03-30 10:37:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (191.9ms)
+Completed 200 OK in 885ms (Views: 883.9ms | ActiveRecord: 0.0ms)
+
+
